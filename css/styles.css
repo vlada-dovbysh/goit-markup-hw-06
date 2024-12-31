@@ -58,13 +58,13 @@ button {
 }
 
 .address {
+    font-style: normal;
 }
 .address-list {
 }
 .adress-item {
 }
 .adress-link {
-    font-style: normal;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -141,9 +141,9 @@ button {
     color: #2e2f42;
 }
 .team-list {
-    background-color: #FFFFFF;
 }
 .team-item {
+    background-color: #FFFFFF;
 }
 .team-img {
 }
@@ -166,12 +166,12 @@ button {
 .portfolio {
 }
 .portfolio-title {
-    text-align: center;
     text-transform: capitalize;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
+    text-align: center;
     color: #2e2f42; 
 }
 .portfolio-list {
