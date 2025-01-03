@@ -39,7 +39,6 @@ button {
 /* #region Header */
 
 .header {
-    padding: 24px 0;
     border-bottom: 1px solid #e7e9fc 
 }
 
@@ -79,6 +78,7 @@ button {
     gap: 40px;
 }
 .nav-item {
+    padding: 24px 0;
 }
 .nav-link {
     font-weight: 500;
