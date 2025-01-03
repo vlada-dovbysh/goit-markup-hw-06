@@ -40,9 +40,16 @@ button {
 
 .header {
     padding: 24px 0;
+    border-bottom: 1px solid #e7e9fc 
 }
 
-.header-box {
+.header > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav {
     display: flex;
     align-items: center;
 }
@@ -70,7 +77,6 @@ button {
 .nav-list {
     display: flex;
     gap: 40px;
-    margin-right: 332px;
 }
 .nav-item {
 }
@@ -128,7 +134,7 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: #ffffff;
-    width: 496px;
+    max-width: 496px;
 }
 
 .hero-btn:hover, .hero-btn:focus {
@@ -146,23 +152,32 @@ button {
     border-radius: 4px;
     padding: 16px 32px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    min-width: 169px
 }
 /* #endregion hero */
 
 /* #region advantages */
-.advantages {
+
+.visually-hidden {
+    position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-.advantages-title {
-}
+
 .advantages-list {
     display: flex;
     gap: 24px;
 }
 .advantages-item {
-    width: 264px;
-    display: flex;
-    gap: 8px;
-    flex-direction: column;
+    width: calc((100% - 72px) / 4)
 }
 .advantages-ttitle {
     font-weight: 500;
@@ -170,6 +185,7 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .advantages-text {
     font-size: 16px;
@@ -199,6 +215,7 @@ button {
 }
 .team-item {
     background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     flex-basis: calc((100% - 72px) /4);
 }
@@ -206,7 +223,7 @@ button {
 }
 
 .teamt {
-    padding: 32px 16px;
+    padding: 32px 0px;
 }
 
 .people-title {
@@ -283,6 +300,19 @@ button {
     background-color: #2e2f42;
     padding: 100px 0;
 }
+
+.logof {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
 .footer-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -297,7 +327,6 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    margin-top: 16px;
     width: 264px;
 }
 /* #endregion footer */
